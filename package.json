@@ -2,7 +2,14 @@
   "name": "grunt-nexe",
   "version": "0.0.1",
   "description": "Create single executable file by grunt",
-  "main": "index.js",
+  "homepage": "https://github.com/e-jigsaw/grunt-nexe",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/e-jigsaw/grunt-nexe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/e-jigsaw/grunt-nexe/issues"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +22,11 @@
   "dependencies": {
     "nexe": "^0.2.9",
     "ncp": "^0.5.1"
-  }
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "files": [
+    "tasks"
+  ]
 }
