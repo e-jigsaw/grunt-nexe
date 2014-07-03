@@ -1,11 +1,19 @@
 {
   "name": "grunt-nexe",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Create single executable file by grunt",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "jigsaw (http://jgs.me)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-coffee": "^0.10.1"
+  },
+  "dependencies": {
+    "nexe": "^0.2.9",
+    "ncp": "^0.5.1"
+  }
 }
