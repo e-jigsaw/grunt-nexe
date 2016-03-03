@@ -38,12 +38,27 @@ Type: `String`
 
 This option required.
 
+#### nodeTempDir
+Type: `String`
+
+Default: `./tmp/nexe`
+
+#### nodeMakeArgs
+Type: `Array`
+
+For example `nodeMakeArgs: [ "-j", "4" ]`
+
 #### flags
 Type: `Boolean`
+Default: `false`
 
 #### version
 Type: `String`
 Default: `latest`
+
+#### framework
+Type: `String`
+Default: `node`
 
 ### Usage Examples
 
@@ -59,6 +74,7 @@ module.exports = (grunt)->
     nexe:
       input: 'build/index.js'
       output: 'build/bin/test'
+      nodeVersion: '5.6.0'
 
     grunt.loadNpmTasks 'grunt-contrib-coffee'
     grunt.loadNpmTasks 'grunt-nexe'
