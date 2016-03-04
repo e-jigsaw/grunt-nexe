@@ -1,6 +1,6 @@
 {
   "name": "grunt-nexe",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Create single executable file by grunt",
   "homepage": "https://github.com/e-jigsaw/grunt-nexe",
   "repository": {
@@ -14,6 +14,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "jigsaw (http://jgs.me)",
+  "contributors": [{
+    "name": "Felix Mann (djflix)",
+    "email": "djflix@gmail.com"
+  }],
   "license": "MIT",
   "devDependencies": {
     "grunt": "^0.4.5",
