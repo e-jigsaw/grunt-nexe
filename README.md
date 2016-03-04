@@ -1,10 +1,10 @@
 # grunt-nexe
 
-Create single executable file by [nexe](https://github.com/crcn/nexe).
+Create single executable file by [nexe](https://github.com/crcn/nexe). Nexe allows to convert a Node.JS project into a self-contained executable for Linux or Mac OS X. A Node.JS runtime environment is also included in the package so there are no extra dependencies and there is no need to install Node.JS on the target environment. This project allows us to use nexe within a Grunt task. 
 
 ## Getting Started
 
-This plugin requires Grunt `~0.4.0`
+This plugin requires Grunt `~0.4.5`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
@@ -30,22 +30,18 @@ Task targets, files and options may be specified according to the grunt [Configu
 
 #### input
 Type: `String`
-
 This option required.
 
 #### output
 Type: `String`
-
 This option required.
 
 #### nodeTempDir
 Type: `String`
-
 Default: `./tmp/nexe`
 
 #### nodeMakeArgs
 Type: `Array`
-
 For example `nodeMakeArgs: [ "-j", "4" ]`
 
 #### flags
@@ -81,6 +77,10 @@ module.exports = (grunt)->
 
     grunt.registerTask 'build', ['coffee', 'nexe']
 ```
+
+### Contributing
+
+The code for this grunt task is situated in `src/nexe.coffee` and can be built using `grunt b` command. Please refrain from editing the `tasks/nexe.js` as it will be overwritten as soon as `grunt b` is run.
 
 ### License
 
