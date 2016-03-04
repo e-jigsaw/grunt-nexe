@@ -20,7 +20,7 @@
     "grunt-contrib-coffee": "^0.10.1"
   },
   "dependencies": {
-    "nexe": "^0.2.9",
+    "nexe": "^1.1.0",
     "ncp": "^0.5.1"
   },
   "keywords": [
